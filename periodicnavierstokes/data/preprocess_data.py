@@ -31,11 +31,10 @@ for i in range(12):
         u_test=tmp["u"][30,0:-1:4,0:-1:4,0:-1:4]
         a_test=tmp["a"][30,0:-1:4,0:-1:4]
 
-index=[i for i in range(600) if i!=430]
 u=u.astype(np.float32)
 a=a.astype(np.float32)
-u=u[index]
-a=a[index]
+u[430]=u[0]
+a[430]=a[0]
 u_super=u_super.astype(np.float32)
 points=points.astype(np.float32)
 t=t.astype(np.float32)
