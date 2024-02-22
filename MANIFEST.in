@@ -1,0 +1,4 @@
+include periodicnavierstokes/data/*.npy
+include periodicnavierstokes/data/*.npz
+
+
